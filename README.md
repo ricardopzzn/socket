@@ -4,7 +4,7 @@ Este repositório contém um programa em C chamado `socket.c` que verifica se um
 
 ## Como Funciona
 
-O programa `socket.c` utiliza sockets para se conectar a uma porta TCP especificada em um endereço IP. Ele tenta estabelecer uma conexão TCP e determina se a porta está aberta ou fechada com base no sucesso ou falha da tentativa de conexão.
+O programa `socket.c` utiliza sockets para se conectar a uma porta TCP especificada em um endereço IP. Ele tenta estabelecer uma conexão TCP e determina se a porta está aberta ou fechada com base no sucesso ou falha da tentativa de conexão, verificação de um total de 65535 portas.
 
 ## Compilação
 
@@ -19,13 +19,8 @@ gcc sockets.c -o socket
 Para executar o programa e verificar uma porta TCP, use o seguinte comando:
 
 ```sh
-./socket
+./socket 192.1.1.10
 ```
-
-- `<endereço_ip>`: O endereço IP do host está dentro do Script.
-- `<porta>`: O número da porta TCP que você deseja verificar está dentro do Script.
-
-
 
 ## Contribuição
 
